@@ -7,7 +7,7 @@ var {
     View,
     Text,
     Component
-} = React;
+    } = React;
 
 var styles = StyleSheet.create({
     container: {
@@ -42,11 +42,11 @@ var styles = StyleSheet.create({
     }
 });
 
-class PropertyView extends Component{
-    render(){
+class PropertyView extends Component {
+    render() {
         var property = this.props.property;
         var stats = property.bedroom_number + ' bed ' + property.property_type;
-        if(property.bathroom_number){
+        if (property.bathroom_number) {
             stats += ', ' + property.bathroom_number + ' ' + (property.bathroom_number) > 1 ? 'bathrooms' : 'bathroom';
         }
 
